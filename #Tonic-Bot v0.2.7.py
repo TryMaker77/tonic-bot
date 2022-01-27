@@ -2,7 +2,8 @@
 str1 = "blank" 
 mood = "blank"
 User_Name = "blank"
-
+num1 = 0
+num2 = 0
 
 #Code
 print("""
@@ -15,8 +16,8 @@ $$$$$$$$/______   _______  $$/   _______        $$$$$$$  |  ______   _$$ |_
    $$ |$$ \__$$ |$$ |  $$ |$$ |$$ \_____        $$ |__$$ |$$ \__$$ |  $$ |/  |
    $$ |$$    $$/ $$ |  $$ |$$ |$$       |       $$    $$/ $$    $$/   $$  $$/ 
    $$/  $$$$$$/  $$/   $$/ $$/  $$$$$$$/        $$$$$$$/   $$$$$$/     $$$$/  
-A Chatbot by TR77 / Thanks to: Theroy, helloworld, Maybe Lindow
-v0.2.7
+A Chatbot by TR77 / Thanks to: Theroy, helloworld, Maybe Lindow, hauntingAide, neroed
+v0.2.8
 """)
 User_Name = input("Enter your name: ")
 print("Hello " + User_Name + """. 
@@ -42,3 +43,8 @@ while (str1 != "quit"): # You need an exit condition here
     #"name length" //////////////////////////////////////////
     if "name length" in str1:
         print( "Your name is " + str(len(User_Name)) + " letters long. (I read this as you asking how long your name is.")
+    #"Multiply" //////////////////////////////////////////
+    if "multiply" in str1:
+        num1 = input("Enter your first number: ")
+        num2 = input("Enter your second number: ")
+        print("Your answer is " + num1 * num2 + ". (I read this as you asking me a multiplication question.")
