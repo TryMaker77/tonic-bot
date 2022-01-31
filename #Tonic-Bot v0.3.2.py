@@ -18,7 +18,7 @@ $$$$$$$$/______   _______  $$/   _______        $$$$$$$  |  ______   _$$ |_
    $$ |$$    $$/ $$ |  $$ |$$ |$$       |       $$    $$/ $$    $$/   $$  $$/ 
    $$/  $$$$$$/  $$/   $$/ $$/  $$$$$$$/        $$$$$$$/   $$$$$$/     $$$$/  
 A Chatbot by TR77 / Thanks to: Theroy, helloworld, Maybe Lindow, hauntingAide, neroed
-v0.3.3
+v0.3.4
 """)
 User_Name = input("Enter your name: ")
 print("Hello " + User_Name + """. 
@@ -52,7 +52,7 @@ while (str1 != "quit"): # You need an exit condition here
         qasked + 1
     #"question count"
     if "question count" in str1:
-        print("You have asked me " + qasked " questions total. (I read this as you asking how many questions you asked.)")
+        print("You have asked me " + qasked + " questions total. (I read this as you asking how many questions you asked.)")
         qasked + 1
     #Math Functions
     #"Multiply" //////////////////////////////////////////
