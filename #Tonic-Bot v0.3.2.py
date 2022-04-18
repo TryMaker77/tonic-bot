@@ -17,28 +17,28 @@ $$$$$$$$/______   _______  $$/   _______        $$$$$$$  |  ______   _$$ |_
    $$ |$$ \__$$ |$$ |  $$ |$$ |$$ \_____        $$ |__$$ |$$ \__$$ |  $$ |/  |
    $$ |$$    $$/ $$ |  $$ |$$ |$$       |       $$    $$/ $$    $$/   $$  $$/ 
    $$/  $$$$$$/  $$/   $$/ $$/  $$$$$$$/        $$$$$$$/   $$$$$$/     $$$$/  
-A Chatbot by TR77 / Thanks to: Theroy, helloworld, Maybe Lindow, hauntingAide, neroed
-v0.3.4
+A Chatbot by TR7
+v0.3.5
 """)
 User_Name = input("Enter your name: ")
 print("Hello " + User_Name + """. 
 Tonic is a simple Python chatbot made in order to test things such as boolean logic
 and variable definition.
 (Also remember to speak to the bot in lowercase, without punctuation.)""")
-while (str1 != "quit"): # You need an exit condition here
+while (str1 != "quit"):
     str1 = input("Say something: ")
     #"hello" //////////////////////////////////////////
     if "hello" in str1:
         print("Hi " + User_Name + "! (I read this as the 'hello' greeting.")
-        qasked + 1
+        int(qasked) + 1
     #"hi" //////////////////////////////////////////
     if "hi" in str1:
         print("Hi " + User_Name + "! (I read this as the 'hi' greeting.")
-        qasked + 1
+        int(qasked) + 1
     #"how are you?" //////////////////////////////////////////
     if "how are you" in str1:
         print("good, how about you? (I read this as you asking 'how are you'.)")
-        qasked + 1
+        int(qasked) + 1
         mood = input("Enter Mood: ")
         if "good" in mood:
             print("Nice to hear " + User_Name + "! (I read this as you being in a good mood.)")
@@ -49,10 +49,10 @@ while (str1 != "quit"): # You need an exit condition here
     #"name length" //////////////////////////////////////////
     if "name length" in str1:
         print( "Your name is " + str(len(User_Name)) + " letters long. (I read this as you asking how long your name is.)")
-        qasked + 1
+        int(qasked) + 1
     #"question count"
     if "question count" in str1:
-        print("You have asked me " + qasked + " questions total. (I read this as you asking how many questions you asked.)")
+        print("You have asked me " + str(qasked) + " questions total. (I read this as you asking how many questions you asked.)")
         qasked + 1
     #Math Functions
     #"Multiply" //////////////////////////////////////////
